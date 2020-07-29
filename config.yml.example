@@ -1,0 +1,9 @@
+# See README on where to get the Box credentials
+---
+box:
+  client_id: this_is_an_example
+  client_secret: this_is_an_example
+jira:
+  url: https://jira.somedomain.com
+  username: some_username
+  password: some_password
