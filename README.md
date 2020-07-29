@@ -1,7 +1,7 @@
 # box-simple-download
 Download files from box.com given shared URL and file list.
 
-The idea of the script is to get Box shared url, file list and destination directory from Jira ticket's description, and download the files using Box SDK.
+The purpose of the script is to get Box shared url, file list and destination directory from Jira ticket's description, and download the files using Box SDK.
 
 Example of the Jira ticket's description:
 >Hello,
@@ -18,7 +18,6 @@ Example of the Jira ticket's description:
 >The target is \\\\someserver\\share\\folder1\\folder2
 >
 >Thank you
-
 ## Configuration
 #### Install required modules
 ```shell script
@@ -28,15 +27,13 @@ pip install -r requirements.txt
 Go to **https://\<somename>.app.box.com/developers/console/** and follow the instructions below
 
 ![](box_developer.gif)
-
 #### Edit config.yml
 ```shell script
 cp config.yml.example config.yml
 ```
-Then configure the config.yml file
-
+Then replace config values with your own.
 ## Usage
-Get developer token from the Box app you just created (It expires every hour)
+Get developer token from the Box app you just created (it expires every hour)
 Then run the script
 ```shell script
 python box_simple_download.py <jira ticket> <developer token>
